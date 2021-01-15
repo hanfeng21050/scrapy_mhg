@@ -37,9 +37,6 @@ ITEM_PIPELINES = {
     'scrapy_redis.pipelines.RedisPipeline': 400,
 }
 
-# 自定义图片保存路径
-IMAGES_STORE = "E:\Python学习\image"
-
 # 请求头
 USER_AGENT_LIST = [
     "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 OPR/26.0.1656.60",
@@ -65,13 +62,15 @@ USER_AGENT_LIST = [
     "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/4.4.3.4000 Chrome/30.0.1599.101 Safari/537.36",
     "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 UBrowser/4.0.3214.0 Safari/537.36"]
 
-REDIS_HOST = '47.114.36.156'
-# REDIS_HOST='192.168.67.131'
+REDIS_HOST = '192.168.1.1'
 # 指定数据库的端口号
 REDIS_PORT = 6379
 REDIS_PARAMS = {
     'password': 'redis123',
 }
+
+# 自定义图片保存路径
+IMAGES_STORE = "E:\Python学习\image"
 
 # 使用了scrapy_redis的去重
 DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
