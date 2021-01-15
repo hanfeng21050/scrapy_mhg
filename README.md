@@ -14,7 +14,7 @@
 1. 修改setting.py中的图片保存地址和redis地址
 
    ```python
-   REDIS_HOST = '4192.168.0.1'
+   REDIS_HOST = '192.168.0.1'
    # 指定数据库的端口号
    REDIS_PORT = 6379
    # 没有密码则注释
